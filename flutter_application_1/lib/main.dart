@@ -25,11 +25,11 @@ class MyhomePage extends StatefulWidget {
 class _MyhomePageState extends State<MyhomePage> {
 
   List<Toys> menu=[
-    Toys("Funko Pop Spiderman", "859"),
-    Toys("Funko Pop Mystrio", "859"),
-    Toys("Funko Pop Ironman", "859"),
-    Toys("Funko Pop Thor", "859"),
-    Toys("Funko Pop Dr.Strang", "859")
+    Toys("Funko Pop Spiderman", "859","assets/imges/picture1.jpg"),
+    Toys("Funko Pop Mystrio", "859","assets/imges/picture2.jpg"),
+    Toys("Funko Pop Ironman", "859","assets/imges/picture3.jpg"),
+    Toys("Funko Pop Thor", "859","assets/imges/picture4.jpg"),
+    Toys("Funko Pop Dr.Strang", "859","assets/imges/picture5.jpg")
   ];
 
   @override
@@ -42,6 +42,7 @@ class _MyhomePageState extends State<MyhomePage> {
           itemCount: menu.length,
           itemBuilder: (BuildContext context, int index) {
             return ListTile(
+              leading: Image.asset(Toys.img),
               title: Text("รายการที่ ${index+1}"),
             );
           },
