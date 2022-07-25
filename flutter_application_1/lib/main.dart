@@ -8,6 +8,7 @@ void main() {
         title: Text("Hello Flutter"),
       ),
     ),
+    theme: ThemeData(primarySwatch: Colors.orange),
   );
   runApp(app);
 }
