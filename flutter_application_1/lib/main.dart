@@ -44,6 +44,9 @@ class _MyhomePageState extends State<MyhomePage> {
             return ListTile(
               leading: Image.asset(Toys.img),
               title: Text("รายการที่ ${index+1}"),
+              onTap: (){
+                print("คุณเลือกของเล่นที่ชื่อว่า = "+Toys.name")
+              },
             );
           },
           ),
